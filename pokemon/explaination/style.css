@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    text-align: center;
+}
+
+#pokemon-selection input {
+    margin: 5px;
+}
+
+#battle-result {
+    margin-top: 20px;
+}
+
+#pokemon-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#pokemon-images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemon-images img {
+    width: 150px;
+    height: 150px;
+}

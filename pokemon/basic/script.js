@@ -21,6 +21,7 @@ async function fetchPokemonData(name) {
             throw new Error('Pokémon not found');
         }
         const data = await response.json();
+        console.log(data);
         return data;
     } catch (error) {
         console.error(error);
