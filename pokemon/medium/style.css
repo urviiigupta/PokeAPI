@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+#pokemon-selection input {
+    margin: 5px;
+}
+
+#battle-result {
+    margin-top: 20px;
+}
+
+#pokemon-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#pokemon-images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemon-images img {
+    width: 150px;
+    height: 150px;
+}
+
+#pokemon-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pokemon-choice {
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pokemon-choice img {
+    width: 100px;
+    height: 100px;
+}
+
+#remaining-pokemons {
+    margin-top: 20px;
+}

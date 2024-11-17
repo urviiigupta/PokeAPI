@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+#pokemon-selection input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4facfe;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#pokemon-selection input:hover {
+    background: #00f2fe;
+    transform: scale(1.05);
+}
+
+#battle-result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #444;
+    font-weight: bold;
+}
+
+#pokemon-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#pokemon-images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+#pokemon-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#pokemon-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.health-bar {
+    width: 200px;
+    height: 20px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.health {
+    height: 100%;
+    background: linear-gradient(to right, #4caf50, #8bc34a);
+    width: 100%;
+    transition: width 0.5s;
+}
+
+#health-bars {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#moves-section {
+    margin-top: 30px;
+}
+
+#user-moves button {
+    margin: 5px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background: #4facfe;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#user-moves button:hover {
+    background: #00f2fe;
+    transform: scale(1.05);
+}
+
+#battle-log {
+    margin-top: 30px;
+}
+
+#log {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}
+
+#log::-webkit-scrollbar {
+    width: 10px;
+}
+
+#log::-webkit-scrollbar-thumb {
+    background: #4facfe;
+    border-radius: 10px;
+}
+
+#log::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
